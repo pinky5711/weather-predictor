@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Travel Advisor</title>
+    <link rel="stylesheet" href="travel-adviser.css">
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="card">
+      <div class="card-header">Enter Your Travel Details</div>
+      <div class="card-body">
+        <form id="travel-form">
+          <div class="form-group">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter your destination">
+
+            
+          </div>
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" placeholder="Select a date">
+          </div>
+          <div class="form-group">
+            <button id="submit-btn">Check Weather</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-header-data">Weather Forecast</div>
+        <div class="card-body" id="result-container"></div>
+      </div>
+    
+      
+    <script type="module" src="travel-adviser.js"></script>
+    <main class="main">
+      <!-- Your cards or other content here -->
+      
+      <!-- Footer -->
+      <div id="footer"></div>
+        <!-- Content of footer -->
+      </footer>
+    </main>
+  </body>
+ 
+</html>
