@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Air Quality Index</title>
+    <link rel="stylesheet" href="aqi.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">AQI</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Air Quality Index</h1>
+    <div class="search-container">
+        <form id="search-form">
+            <div class="search-box">
+              <input type="text" id="city-input" placeholder="Enter city name">
+              <ul id="suggestion-list"></ul>
+              <button type="submit">Search</button>
+            </div>
+          </form>
+          
+          
+      </div>
+      
+        <div class="aqi-details-container">
+          <div class="aqi-details">
+            <div class="aqi-status">
+                <div class="aqi-value"></div>
+              <div class="aqi-level-icon"></div>
+              <div class="aqi-level-text"></div>
+            </div>
+            <div class="aqi-index"></div>
+            <div class="aqi-overview"></div>
+            <div class="aqi-pollutants"></div>
+          </div>
+          <div class="aqi-chart"></div>
+        </div>
+
+        <div id="chart-container">
+            <svg id="chart-svg"></svg>
+            <div id="aqi-label-container">
+              <div class="aqi-label good">Good</div>
+              <div class="aqi-label moderate">Moderate</div>
+              <div class="aqi-label usg">Unhealthy for Sensitive Groups</div>
+              <div class="aqi-label unhealthy">Unhealthy</div>
+              <div class="aqi-label vunhealthy">Very Unhealthy</div>
+              <div class="aqi-label hazardous">Hazardous</div>
+            </div>
+          </div>
+          
+          
+          <svg viewBox="0 0 600 600">
+            <!-- Background circle -->
+            <circle cx="300" cy="300" r="250" fill="#f2f2f2" />
+            
+            <!-- AQI categories -->
+            <circle cx="300" cy="300" r="200" fill="#3d9e3d" />
+            <circle cx="300" cy="300" r="160" fill="#e6d83f" />
+            <circle cx="300" cy="300" r="120" fill="#ff9c00" />
+            <circle cx="300" cy="300" r="80" fill="#ff4d4d" />
+            <circle cx="300" cy="300" r="40" fill="#99004c" />
+            <circle cx="300" cy="300" r="10" fill="#660000" />
+            
+            <!-- AQI labels -->
+            <text x="300" y="150" text-anchor="middle" font-size="24">Good</text>
+            <text x="300" y="220" text-anchor="middle" font-size="24">Moderate</text>
+            <text x="300" y="290" text-anchor="middle" font-size="24">Unhealthy for Sensitive Groups</text>
+            <text x="300" y="360" text-anchor="middle" font-size="24">Unhealthy</text>
+            <text x="300" y="430" text-anchor="middle" font-size="24">Very Unhealthy</text>
+            <text x="300" y="500" text-anchor="middle" font-size="24">Hazardous</text>
+            
+            <!-- AQI value text -->
+            <text x="300" y="330" text-anchor="middle" font-size="96">50</text>
+            
+            <!-- AQI pointer -->
+            <polygon points="290,330 310,330 300,260" fill="#ff4d4d" />
+            
+          </svg>
+          
+      
+    <footer>
+      <div class="footer-content">
+        <p>Some description here</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Weather Management. All rights reserved.</p>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  
+    <script type="module" src="aqi.js"></script>
+  </body>
+</html>
