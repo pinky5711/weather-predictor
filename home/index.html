@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Management</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <h2>Weather Predictor</h2>
+    <!-- Notification element -->
+    <div id="notification" class="hidden">
+			<div class="card bg-success text-white">
+			  <div class="card-body">
+				Logout Successfully
+			  </div>
+			</div>
+		  </div>
+
+  <div class="container">
+    <form id="search-form">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search city...">
+        <button type="submit" class="btn search-btn" id="search-button-form">Search</button>
+      </div>
+    </form>
+    
+    <div class="card-container">
+      <div class="weather-card">
+        <h2 id="name"></h2>
+        <img id="weather-icon">
+        <div class="weather-data" id="temperature"></div>
+        <div class="weather-data" id="description"></div>
+        <div class="weather-data" id="humidity"></div>
+        <div class="weather-data" id="pressure"></div>
+        <section id="uv-index">
+          <h4>UV Index</h4>
+          <div class="uv-index-container">
+            <p class="uv-index-value"></p>
+          </div>
+        </section>
+      
+        <button id="forecast-btn" class="btn forecast-btn">Get Forecast</button>
+      </div>
+      <div class="hourly-forecast-card">
+      
+          <h3>Hourly Forecast</h3>
+          <canvas id="hourly-chart"></canvas>
+  
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="error-card" style="display:none">
+    <p class="error-message"></p>
+    <button id="close-error-btn" class="close-error-btn">X</button>
+  </div>
+ 
+  <!-- <div class="container">
+      <div id="forecast-table" class="forecast-table"></div>
+    </div> -->
+  <div class="container">
+    <div class="row">
+      <div id="Mumbai" class="card">
+        <h3>Mumbai</h3>
+        <p>Description of Mumbai city.</p>
+      </div>
+      <div id="Bangalore" class="card">
+        <h3>Bangalore</h3>
+        <p>Description of Bangalore city.</p>
+      </div>
+      <div id="Delhi" class="card">
+        <h3>Delhi</h3>
+        <p>Description of Delhi city.</p>
+      </div>
+      <div id="Chennai" class="card">
+        <h3>Chennai</h3>
+        <p>Description of Chennai city.</p>
+      </div>
+      <div id="Hyderabad" class="card">
+        <h3>Hyderabad</h3>
+        <p>Description of Hyderabad city.</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <script type="module" src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <div id="footer"></div>
+
+</body>
+
+</html>
