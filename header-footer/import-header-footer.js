@@ -1,25 +1,3 @@
-
-
-// fetch("/header-footer/header.html")
-//   .then(response => response.text())
-//   .then(html => {
-//     // Extract any <script> tags from the HTML
-//     let temp = document.createElement('div');
-//     temp.innerHTML = html;
-//     let scripts = temp.getElementsByTagName('script');
-
-//     // Execute each script individually
-//     for (let i = 0; i < scripts.length; i++) {
-//       eval(scripts[i].innerText);
-//     }
-
-//     // Append the HTML to your page
-//     document.getElementById("header").innerHTML = temp.innerHTML;
-//   });
-
-
-
-
   
 function importHtmlFile(filePath, elementId) {
     const xhr = new XMLHttpRequest();
