@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Weather App - Earthquake</title>
+    <link rel="stylesheet" href="earthquake.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Weather App</h1>
+      <nav>
+        <a class="tablinks " href="index.html">Weather</a>
+        <a class="tablinks" href="aqi.html">Air Quality</a>
+        <a class="tablinks active " href="#earthquake">Earthquake</a>
+      </nav>
+    </header>
+    <main>
+      <section id="weather-page">
+        <!-- Weather page content -->
+      </section>
+      <section id="air-quality-page">
+        <!-- Air quality page content -->
+      </section>
+      <section id="earthquake-page">
+        <div class="search-container">
+          <input id="earthquake-input" type="text" placeholder="Enter a state or city">
+          <button id="search-button">Search</button>
+        </div>
+        <div id="earthquake-details"></div>
+        <div id="earthquake-prediction"></div>
+      </section>
+    </main>
+    <script src="earthquake.js"></script>
+  </body>
+</html>
