@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Predictor</title>
+    <link rel="stylesheet" href="../header-footer/header-footer.css">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#" data-tooltip="Home">Home</a></li>
+          <li><a href="../travel-planner/travel.html" data-tooltip="Travel Advisor">Travel Advisor</a></li>
+          <li><a href="../earthquake/earthquake.html" data-tooltip="Earthquake">Earthquake</a></li>
+          <li><a href="../air-quality/aqi.html" data-tooltip="AQI">AQI</a></li>
+          <li><a href="#"><i class="fas fa-search"></i></a></li>
+        </ul>
+      </nav>
+
+      <div id="user-profile">
+        <img src="" alt="Profile picture">
+        <button id="logout-button" class="hidden">Logout</button>
+        <p id="user-name"></p>
+      </div>  
+    </header>
+    <script src="../logout/logout.js"></script>
+    <script src="../profile/profile.js"></script>
+  </body>
+  <script>
+    const userProfile = document.getElementById('user-profile');
+  </script>
+</html>
